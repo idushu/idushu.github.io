@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/03/MarkDown 语法/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2018/08/03/MarkDown 语法/" itemprop="url">Makrdown 基础语法</a></h1>
         
 
         <div class="post-meta">
@@ -300,8 +300,7 @@
       
         
           
-            <p>#Makrdown</p>
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>要强制换行，请在行尾添加两个空格和换行符（return）。</p>
+            <h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>要强制换行，请在行尾添加两个空格和换行符（return）。</p>
 <ul>
 <li><p>This two-line bullet<br>won’t break</p>
 </li>
@@ -324,7 +323,7 @@ Header 2
 #### Header 4
 ##### Header 5
 ###### Header 6
-</code></pre><h3 id="链接和电子邮件"><a href="#链接和电子邮件" class="headerlink" title="链接和电子邮件"></a>链接和电子邮件</h3><h4 id="内联的"><a href="#内联的" class="headerlink" title="内联的"></a>内联的</h4><p>只需在电子邮件周围放置&lt; &gt;即可点击：<a href="mailto:&#x75;&#x73;&#101;&#114;&#x6e;&#97;&#x6d;&#101;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#x75;&#x73;&#101;&#114;&#x6e;&#97;&#x6d;&#101;&#x40;&#103;&#x6d;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a><br><code>&lt;username@gmail.com&gt;</code></p>
+</code></pre><h3 id="链接和电子邮件-url-and-email"><a href="#链接和电子邮件-url-and-email" class="headerlink" title="链接和电子邮件 (url and email)"></a>链接和电子邮件 (url and email)</h3><h4 id="内联的"><a href="#内联的" class="headerlink" title="内联的"></a>内联的</h4><p>只需在电子邮件周围放置&lt; &gt;即可点击：<a href="mailto:&#x75;&#x73;&#x65;&#x72;&#x6e;&#97;&#109;&#x65;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">&#x75;&#x73;&#x65;&#x72;&#x6e;&#97;&#109;&#x65;&#64;&#x67;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#111;&#109;</a><br><code>&lt;username@gmail.com&gt;</code></p>
 <p>网址也一样：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a><br><code>&lt;https://github.com&gt;</code></p>
 <p>也许你想要一些这样的链接文字：<a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="noopener">Macdown Website</a><br><code>[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;)</code>（标题是可选的） </p>
 <h4 id="参考风格"><a href="#参考风格" class="headerlink" title="参考风格"></a>参考风格</h4><p>有时看起来太乱了，不能包含内联的大长网址，或者你想要将所有网址保持在一起。</p>
@@ -332,9 +331,9 @@ Header 2
 <p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com" target="_blank" rel="noopener">like this</a> <code>[like this][]</code>, then on it’s own line anywhere else in the file:<br><code>[like this]: http://macdown.uranusjr.com</code>  </p>
 <pre><code>[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot;
 [like this]: http://macdown.uranusjr.com 
-</code></pre><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><h4 id="内联的-1"><a href="#内联的-1" class="headerlink" title="内联的"></a>内联的</h4><p><code>![Alt Image Text](path/or/url/to.jpg &quot;标题是可选的&quot;)</code></p>
+</code></pre><h3 id="图片-Image"><a href="#图片-Image" class="headerlink" title="图片 (Image)"></a>图片 (Image)</h3><h4 id="内联的-1"><a href="#内联的-1" class="headerlink" title="内联的"></a>内联的</h4><p><code>![Alt Image Text](path/or/url/to.jpg &quot;标题是可选的&quot;)</code></p>
 <h4 id="参考风格-1"><a href="#参考风格-1" class="headerlink" title="参考风格"></a>参考风格</h4><p><code>![Alt Image Text][image-id]</code><br>on it’s own line elsewhere:<br><code>[image-id]: path/or/url/to.jpg &quot;Optional Title&quot;</code></p>
-<p>###列表</p>
+<p>###列表 (Lists)</p>
 <ul>
 <li>列表必须以空行（或块元素）开头</li>
 <li>无序列表以“*”开始每个项目</li>
@@ -355,32 +354,31 @@ Header 2
 </ul>
 <p>代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* Lists must be preceded by a blank line (or block element)  </span><br><span class="line">* Unordered lists start each item with a `*`</span><br><span class="line">- `-` works too</span><br><span class="line">	* Indent a level to make a nested list</span><br><span class="line">		1. Ordered lists are supported.</span><br><span class="line">		2. Start each item (number-period-space) like `1. `</span><br><span class="line">		42. It doesn&apos;t matter what number you use, I will render them sequentially</span><br><span class="line">		1. So you might want to start each line with `1.` and let me sort it out</span><br></pre></td></tr></table></figure>
-<h3 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h3><blockquote>
-<p>Angle brackets <code>&gt;</code> are used for block quotes.<br>Technically not every line needs to start with a <code>&gt;</code> as long as<br>there are no empty lines between paragraphs.<br>Looks kinda ugly though.</p>
+<h3 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h3><blockquote>
+<p>尖括号 <code>&gt;</code> 用于块引用<br>从技术上讲，并不是每一行都需要以<code>&gt;</code>开头<br>段落之间没有空行。<br>看起来有点难看。</p>
 <blockquote>
-<p>Block quotes can be nested.  </p>
+<p>块引用可以嵌套。</p>
 <blockquote>
-<p>Multiple Levels</p>
+<p>多个级别</p>
 </blockquote>
 </blockquote>
-<p>Most markdown syntaxes work inside block quotes.</p>
+<p>大多数markdown语法在块引用内有效</p>
 <ul>
 <li>Lists</li>
 <li><a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="noopener">Links</a></li>
 <li>Etc.</li>
 </ul>
 </blockquote>
-<p>Here is the code:</p>
+<p>代码:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; Angle brackets `&gt;` are used for block quotes.  </span><br><span class="line">Technically not every line needs to start with a `&gt;` as long as</span><br><span class="line">there are no empty lines between paragraphs.  </span><br><span class="line">&gt; Looks kinda ugly though.</span><br><span class="line">&gt; &gt; Block quotes can be nested.  </span><br><span class="line">&gt; &gt; &gt; Multiple Levels</span><br><span class="line">&gt;</span><br><span class="line">&gt; Most markdown syntaxes work inside block quotes.</span><br><span class="line">&gt;</span><br><span class="line">&gt; * Lists</span><br><span class="line">&gt; * [Links][arbitrary_id]</span><br><span class="line">&gt; * Etc.</span><br></pre></td></tr></table></figure>
-<h3 id="Inline-Code"><a href="#Inline-Code" class="headerlink" title="Inline Code"></a>Inline Code</h3><p><code>Inline code</code> is indicated by surrounding it with backticks:<br><code>`Inline code`</code></p>
-<p>If your <code>code has `backticks`</code> that need to be displayed, you can use double backticks:<br><code>``Code with `backticks` ``</code>  (mind the spaces preceding the final set of backticks)</p>
-<h3 id="Block-Code"><a href="#Block-Code" class="headerlink" title="Block Code"></a>Block Code</h3><p>If you indent at least four spaces or one tab, I’ll display a code block.</p>
-<pre><code>print(&apos;This is a code block&apos;)
-print(&apos;The block must be preceded by a blank line&apos;)
-print(&apos;Then indent at least 4 spaces or 1 tab&apos;)
-    print(&apos;Nesting does nothing. Your code is displayed Literally&apos;)
-</code></pre><p>I also know how to do something called <a href="#fenced-code-block">Fenced Code Blocks</a> which I will tell you about later.</p>
-<h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>If you type three asterisks <code>***</code> or three dashes <code>---</code> on a line, I’ll display a horizontal rule:</p>
+<h3 id="内联代码"><a href="#内联代码" class="headerlink" title="内联代码"></a>内联代码</h3><p><code>内联代码</code> 用反引号括起来表示:<br><code>`Inline code`</code></p>
+<p>如果你的<code>代码有 `反引号括`</code> 需要显示, 你可以使用双反引号:<br><code>``Code with `backticks` ``</code>  (注意最后一组反引号之前的空格)</p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>如果缩进至少四个空格或一个制表符，将显示一个代码块。</p>
+<pre><code>print(&apos;这是一个代码块&apos;)
+print(&apos;必须以空行开头&apos;)
+print(&apos;然后缩进至少4个空格或一个制表符&apos;)
+    print(&apos;嵌套什么都不做。 您的代码按字面显示&apos;)
+</code></pre><h3 id="水平线"><a href="#水平线" class="headerlink" title="水平线"></a>水平线</h3><p>如果在一行上键入三个星号<code>***</code>或三个短划线<code>---</code>，将显示一条水平线:</p>
 <hr>
 
           
